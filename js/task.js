@@ -1,3 +1,163 @@
+// 31-08-2024
+
+// Tutor25 11:16
+// <div>
+//       <p class="taskTitle">ЗАДАЧА 8</p>
+//       <div class="statList">
+//         <button class="calcButton" data-number="5">Button #1</button>
+//         <button class="calcButton" data-number="2">Button #2</button>
+//         <button class="calcButton" data-number="10">Button #3</button>
+//         <button class="calcButton" data-number="50">Button #4</button>
+//         <button class="calcButton" data-number="0">Button #5</button>
+//         <button class="calcButton" data-number="20">Button #6</button>
+//       </div>
+//       <button id="resultButton">Вывести результат</button>
+//       <div id="resultSection"></div>
+//     </div>
+// При натисканні на кожну з кнопок підсумовуються значення з data-атрибутів.
+// За натисканням на кнопку "Вивести результат" виводиться сума значення, а також статистика з
+// інформацією про те, яка кнопка була натиснута скільки разів.
+
+// const refs = {
+// statList: document.querySelector(".statlist"),
+// };
+
+// refs.statList.addEventListener("click", onStatlistButtonClick);
+
+// let sum = 0;
+// let statClicks = {};
+
+// function onStatlistButtonClick(evt){
+//   if(evt.target.nodeName != "BUTTON"){
+//     return;
+//   }
+//   sum += Number(evt.target.dataset.number);
+//   statClicks[evt.target.textContent] = (statClicks[evt.target.textContent] ?? 0) + 1
+// }
+
+
+
+/* <div>
+      <p class="taskTitle">ЗАДАЧА 3</p>
+      <input id="passwordInput" type="text" />
+      <button id="passwordButton">Скрыть</button>
+    </div>
+Кнопка "Приховати" ховає текст і замінює назву кнопки на
+"Розкрити", при повторному натисканні текст знову стає доступним
+і кнопка набуває початкового вигляду. */
+
+
+// const refs = {
+// taskTitle: document.querySelector ('.taskTitle'), 
+// passwordButton: document.querySelector('#passwordButton')
+
+// };
+
+// refs.passwordButton.addEventListener('click', onPasswordClick);
+
+// function onPasswordClick(){
+// if (refs.passwordButton.textContent = "Розкрите"){
+//   refs.passwordButton.textContent = "Приховати";
+//   refs.taskTitle.style.display = "block";
+//   return
+// }
+// refs.taskTitle.style.display = "none"
+// refs.passwordButton.textContent = "Розкрите"
+// }
+
+// Nastja:
+// const refs = {
+//   taskTitle: document.querySelector(".taskTitle"),
+//   passwordButton: document.querySelector("#passwordButton"),
+// };
+// refs.passwordButton.addEventListener("click", onPasswordClick);
+// function onPasswordClick() {
+//   if (refs.passwordButton.textContent === "Розкрити") {
+//     refs.passwordButton.textContent = "Приховати";
+//       refs.taskTitle.style.display = "block";
+//       return; 
+//   }
+//   refs.taskTitle.style.display = "none";
+//   refs.passwordButton.textContent = "Розкрити";
+// }
+
+// Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
+// Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+// <div>
+//       <p class="taskTitle">ЗАДАЧА 2</p>
+//       <button id="swapButton">SWAP ME</button>
+//       <input id="leftSwapInput" type="text" value="???" />
+//       <input id="rightSwapInput" type="text" value="!!!" />
+//     </div>
+
+// const refs = {
+// swapButton : document.querySelector('#swapButton'),
+// leftSwapInput: document.querySelector('#leftSwapInput')
+// rightSwapInput: document.querySelector('#rightSwapInput')
+// };
+
+// refs.swapButton.addEventListener('click', onSwapButtonClick);
+// function onSwapButtonClick (event){
+// const leftSwapInputVlaue = refs.leftSwapInput.valur.trim();
+// refs.leftSwapInput.value = refs.rightSwapInput.value.trim();
+// refs.rightSwapInput.vlaue - leftSwapInputValue;
+// }
+
+
+
+
+
+
+
+// Задача 1
+// Натискання на кнопку "SHOW ME" має виводити значення з поля введення (дивіться на елементи в html-розмітці)
+// const refs = {
+// taskTitle: document.quearySelector('.taskTitle'),
+// alertButton: document.querySelector('#alertButton'),
+// alerInput: document.querySelector('#alertInput')
+// }
+// alert.alertButton.addEventListener('clock', onAlertButtonClick);
+// function onAlertButtonClick () {
+// console.log ('Hello')
+// refs.taskTitle.textContent = refs.alertInput.value.trim()
+// }
+// Марьяна:
+// // const refs = {
+// //     taskTitle: document.querySelector('.taskTitle'),
+// //     alertButton: document.querySelector('#alertButton'),
+// //     alertInput: document.querySelector('#alertInput'),
+// // }
+// // refs.alertButton.addEventListener('click', onAlertButtonClick);
+// // function onAlertButtonClick (){
+    
+// //     refs.taskTitle.textContent = refs.alertInput.value.trim();
+// // }
+// Марьяна
+
+
+
+
+
+// const registerForm = document.querySelector(".form");
+
+// registerForm.addEventListener("submit", handleSubmit);
+
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const form = event.target;
+//   const login = form.elements.login.value;
+//   const password = form.elements.password.value;
+  
+//   if (login === "" || password === "") {
+//     return console.log("Please fill in all the fields!");
+//   }
+
+//   console.log(`Login: ${login}, Password: ${password}`);
+//   form.reset();
+// }
+
+
+
 // 17/08/2024
 
 //Напишіть дві функції
